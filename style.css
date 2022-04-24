@@ -1,0 +1,327 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+.container {
+
+	display: grid;
+	/*grid-template-columns: 200px 200px 200px 200px;
+	grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;*/
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	grid-template-areas: "nav nav nav nav"
+						"header header header header"
+						"experiencia experiencia educacion educacion"
+						"portfolio portfolio portfolio"
+						"box1 box2 box3 box4"
+						"trabajo1 trabajo2 trabajo3 trabajo4"
+						"footer footer footer footer";
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+li {
+	list-style: none;
+	width: 20%;
+	height: 5vh;
+	text-align: center;
+	border: 2px solid;
+}
+header {
+	display: flex;
+}
+
+header h1 {
+	margin: auto;
+}
+
+nav {
+	grid-area: nav;
+	background-color: red;
+	color: white;
+}
+
+header {
+	grid-area: header;
+	background-color: blue;
+	color: white;
+}
+
+div a {
+	float: right;
+}
+
+
+
+.portfolio {
+		grid-area: portfolio;
+	background-color: maroon;
+	color: white;
+	margin: auto;
+	
+}
+
+.experiencia {
+	grid-area: experiencia;
+	background-color: yellow;
+	color: white;
+}
+
+.educacion {
+	grid-area: educacion;
+	background-color: green;
+	color: white;
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+}
+
+
+.box1 {
+	grid-area: box1;
+	background-color: orange;
+	color: white;
+	
+	
+}
+.box2 {
+	grid-area: box2;
+	background-color: orange;
+	color: white;
+	
+}
+.box3 {
+	grid-area: box3;
+	background-color: orange;
+	color: white;
+	
+}
+.box4 {
+	grid-area: box4;
+	background-color: orange;
+	color: white;
+	
+}
+
+.trabajo1 {
+	grid-area: trabajo1;
+	background-color:pink;
+	color: white;
+	
+}
+
+.trabajo2 {
+	grid-area: trabajo2;
+	background-color:pink;
+	color: white;
+	
+}
+
+.trabajo3 {
+	grid-area: trabajo3;
+	background-color:pink;
+	color: white;
+	
+}
+
+.trabajo4 {
+	grid-area: trabajo4;
+	background-color:pink;
+	color: white;
+	
+}
+
+
+
+
+footer {
+	grid-area: footer;
+	background-color: black;
+	color: white;
+}
+
+
+/*medida celular bootstrap*/
+@media only screen and (min-width: 320px){
+	/*body{background-color: green;}*/
+		.container {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(13, 1fr);
+			grid-template-areas: "nav"
+								"header"
+								"experiencia "
+								"educacion"
+								"portfolio"
+								"box1" 
+								"trabajo1"
+								"box2"
+								"trabajo2"
+								"box3"
+								"trabajo3"
+								"box4"
+								"trabajo4"
+								"footer";
+
+		}
+}
+
+
+/*medida tablet bootstrap*/
+@media only screen and (min-width: 576px) {
+	/*body{background-color: orange;}*/
+	.container {
+	display: grid;
+	/*grid-template-columns: 200px 200px;
+	grid-template-rows: repeat(7,200px);*/
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(7, 1fr);
+	
+	grid-template-areas: "nav nav"
+						"header header"
+						"experiencia educacion"
+						"portfolio portfolio"
+						"box1 box2 "
+						"trabajo1 trabajo2"
+						"box3 box4"
+						"trabajo3 trabajo4"
+						"footer footer";
+	}
+	
+
+	
+}
+
+@media only screen and (min-width: 859px) {
+	/*body{background-color: maroon;} */
+	
+
+
+
+nav {
+	grid-area: navigational;
+	background-color: red;
+	color: white;
+}
+
+header {
+	grid-area: encabezado;
+	background-color: blue;
+	color: white;
+}
+
+.portfolio {
+		grid-area: portf;
+	background-color: maroon;
+	color: white;
+	margin: auto;
+	
+}
+
+.experiencia {
+	grid-area: exp;
+	background-color: yellow;
+	color: white;
+}
+
+.educacion {
+	grid-area: edu;
+	background-color: green;
+	color: white;
+}
+
+
+
+.box1 {
+	grid-area: b1;
+	background-color: orange;
+	color: white;
+	
+	
+}
+.box2 {
+	grid-area: b2;
+	background-color: orange;
+	color: white;
+	
+}
+.box3 {
+	grid-area: b3;
+	background-color: orange;
+	color: white;
+	
+}
+.box4 {
+	grid-area: b4;
+	background-color: orange;
+	color: white;
+	
+}
+
+.trabajo1 {
+	grid-area: trab1;
+	background-color:pink;
+	color: white;
+	
+}
+
+.trabajo2 {
+	grid-area: trab2;
+	background-color:pink;
+	color: white;
+	
+}
+
+.trabajo3 {
+	grid-area: trab3;
+	background-color:pink;
+	color: white;
+	
+}
+
+.trabajo4 {
+	grid-area: trab4;
+	background-color:pink;
+	color: white;
+	
+}
+
+
+
+
+footer {
+	grid-area: foo;
+	background-color: black;
+	color: white;
+}
+
+
+.container {
+	display: grid;
+	/*grid-template-columns: 200px 200px 200px 200px;
+	grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;*/
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	
+	grid-template-areas: "navigational navigational navigational navigational"
+							"encabezado encabezado encabezado encabezado"
+							"edu edu exp exp"
+							"portf portf portf portf "
+							"b1 b2 b3 b4"
+							"trab1 trab2 trab3 trab4"
+							"foo foo foo foo";
+							
+						
+	}
+
+	
+}
